@@ -14,7 +14,7 @@ CREATE TABLE bronze_reactive_maintenance(
     category_3          NVARCHAR(100),
     category_4          NVARCHAR(100),
     ticket_number       NVARCHAR(50),
-    created_date        DATE,
+    created_date        NVARCHAR(50),
     source_id           NVARCHAR(100),
     app_name            NVARCHAR(100),
     priority            NVARCHAR(50),
@@ -25,9 +25,8 @@ CREATE TABLE bronze_reactive_maintenance(
     dsp_name            NVARCHAR(200),
     functional_location NVARCHAR(200),
     created_by          NVARCHAR(100),
-    status_date         DATE,
+    status_date         NVARCHAR(50),
     building            NVARCHAR(100),
-    last_notes_date     DATE,
-    problem_location    NVARCHAR(500),
-    dwh_load_date       DATETIME DEFAULT CURRENT_TIMESTAMP   -- audit column
+    last_notes_date     NVARCHAR(50),
+    problem_location    NVARCHAR(500)
 );
